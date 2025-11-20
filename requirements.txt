@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+cohere
+python-dotenv
+numpy
+faiss-cpu
+pytest
+pytest-asyncio
+httpx
