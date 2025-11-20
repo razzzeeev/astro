@@ -54,11 +54,37 @@ Then visit http://127.0.0.1:8000/docs to see the interactive API documentation!
    - Create `.env` configuration file
    - Verify project structure
 
-3. Update your Cohere API key:
+3. Update your Cohere API key and configuration:
    ```bash
    nano .env
-   # Update COHERE_API_KEY with your key from https://dashboard.cohere.com/api-keys
+   # Or use any text editor: code .env, vim .env, etc.
    ```
+   
+   **Required Configuration:**
+   - Update `COHERE_API_KEY` with your key from https://dashboard.cohere.com/api-keys
+   
+   **Optional Configuration:**
+   - `VECTOR_STORE_ENABLED=true` - Enable FAISS vector store for context retrieval (default: true)
+   - `TRANSLATION_ENABLED=true` - Enable translation support for multiple languages (default: true)
+   - `DEBUG=false` - Enable debug logging (default: false)
+   
+   **Example .env file:**
+   ```bash
+   # Required
+   COHERE_API_KEY=your_actual_cohere_api_key_here
+   
+   # Optional - Features (all disabled by default)
+   VECTOR_STORE_ENABLED=false
+   TRANSLATION_ENABLED=false
+   
+   # Optional - Advanced Settings
+   COHERE_MODEL=command-r-08-2024
+   COHERE_TEMPERATURE=0.7
+   TOP_K_RESULTS=3
+   DEBUG=false
+   ```
+   
+   > **Note**: Vector store and translation are disabled by default. Set to `true` to enable if needed.
 
 ### Manual Setup (Alternative)
 
