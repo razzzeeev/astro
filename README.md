@@ -2,7 +2,7 @@
 
 An **async-first** FastAPI service that generates personalized daily astrological insights using Cohere LLM, FAISS vector store, in-memory caching, and multilingual support.
 
-## 🚀 Quick Start
+## Quick Start
 
 Get started in 3 simple steps:
 
