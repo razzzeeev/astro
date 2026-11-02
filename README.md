@@ -413,6 +413,3 @@ For more detailed troubleshooting, see [SETUP_GUIDE.md](SETUP_GUIDE.md).
 - **[README.md](README.md)** - Main project documentation (you are here)
 - **API Docs** - Available at http://127.0.0.1:8000/docs when server is running
 
-## License
-
-See LICENSE file for details.
